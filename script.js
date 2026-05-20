@@ -25,3 +25,9 @@ if (age <18) {
     // calcolo sconto del 20% per i minorenni
     let sconto = price * 0.20;
 } else if (age > 65) {
+    // calcolo sconto del 40% per gli over 65
+    let sconto = price * 0.40;
+}
+
+
+
