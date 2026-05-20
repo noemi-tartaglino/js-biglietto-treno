@@ -24,10 +24,14 @@ let price= km * 0.21;
 if (age <18) {
     // calcolo sconto del 20% per i minorenni
     let sconto = price * 0.20;
+    price = price - sconto;
 } else if (age > 65) {
     // calcolo sconto del 40% per gli over 65
     let sconto = price * 0.40;
+    price = price - sconto; 
 }
+console.log("il prezzo del biglietto è: €" + price.toFixed(2));    
+
 
 
 
