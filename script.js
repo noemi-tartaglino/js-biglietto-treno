@@ -12,3 +12,16 @@ per controllare che la vostra logica sui prezzi funzioni correttamente, provate 
 
 100km, 10 anni => prezzo corretto:  €16.80
 100km, 70 anni => prezzo corretto: €12.60
+
+// Chiedi all'utente il numero di chilometri e l'età
+const km = parseFloat(prompt("quanti chilometri vuoi percorrere?"));
+const age = parseInt(prompt("quanti anni hai?"));
+
+// Calcola il prezzo base del biglietto
+let price= km * 0.21;
+ 
+// Applica sconti in base all'età
+if (age <18) {
+    // calcolo sconto del 20% per i minorenni
+    let sconto = price * 0.20;
+} else if (age > 65) {
